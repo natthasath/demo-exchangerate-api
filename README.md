@@ -1,6 +1,6 @@
-# 🎉 Template Python FastAPI
+# 🎉 DEMO ExchangeRate API
 
-FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. It has a simple and easy to use API, is lightweight, and includes features like asynchronous support, dependency injection, and more.
+Exchange rate is the value of one country's currency in terms of another country's currency. It fluctuates based on supply and demand in the market, and can be influenced by economic conditions and government policy.
 
 ![version](https://img.shields.io/badge/version-1.0-blue)
 ![rating](https://img.shields.io/badge/rating-★★★★★-yellow)
