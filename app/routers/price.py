@@ -9,21 +9,24 @@ router = APIRouter(
     responses={404: {"message": "Not found"}}
 )
 
+exchange_service = ExchangeService()
+oil_service = OilService()
+
 @router.get("/exchange")
 async def get_all():
-    return ExchangeService().get_all()
+    return exchange_service.get_all()
 
 @router.post("/exchange/search")
 async def get_search(name: str):
-    return ExchangeService().get_search(name)
+    return exchange_service.get_search(name)
 
 @router.get("/oil")
 async def get_all():
-    return OilService().get_all()
+    return oil_service.get_all()
 
 @router.post("/oil/search")
 async def get_search(name: OilSchema):
-    return OilService().get_search(name)
+    return oil_service.get_search(name)
 
 @router.get("/gold")
 async def get_all():
